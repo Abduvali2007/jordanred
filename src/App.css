@@ -1,25 +1,37 @@
-@import '../src/Assets/Styles/Home.css';
+@import "../src/Assets/Styles/Home.css";
 
 * {
   margin: 0;
-  padding: 0; 
-
+  padding: 0;
 }
-.container{
+.container {
   width: 80%;
   margin: 0 auto;
 }
 
-a{
+a {
   text-decoration: none;
 }
-button{
+button {
   cursor: pointer;
   transition: 0.7s;
 }
-button:hover{
+button:hover {
   transform: scale(0.9);
 }
-body{
+body {
   background: rgba(0, 0, 0, 0.945);
 }
+
+/* .scroll {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  overflow-x: scroll;
+} */
+::-webkit-scrollbar {
+       display: none;
+      height: 1px;
+      width: auto;
+      color: rgba(66, 65, 65, 0.361);
+     }

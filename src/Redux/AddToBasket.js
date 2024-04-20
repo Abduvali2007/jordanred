@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit"
 
  const initialState = {
-  basket: []
+  basket:JSON.parse((localStorage.getItem("basket")))|| []
  }
 
  export const basketSlice = createSlice ({
@@ -9,6 +9,7 @@ import { createSlice } from "@reduxjs/toolkit"
   initialState,
   reducers:{
     addBasket(state, action){
+      localStorage.setItem("basket", JSON.stringify([...state.basket,action.payload]))
       state.basket = [...state.basket,action.payload]
     }
   }

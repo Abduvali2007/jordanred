@@ -1,9 +1,8 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
 import { ImBin } from "react-icons/im";
 import { del } from "../../Redux/AddProductSlice";
-import {addBasket} from "../../Redux/AddToBasket";
+import { addBasket } from "../../Redux/AddToBasket";
 
 const BuyNow = () => {
   const { product } = useSelector((s) => s.AddProduct);
@@ -13,7 +12,7 @@ const BuyNow = () => {
     return dispatch(del(dat));
   };
   const GoToBasket = (da) => {
-    return dispatch(addBasket(da));
+    return dispatch(addBasket(da))
   };
   const PriceAll = product.reduce((acc, el) => {
     return (acc = acc + +el.price);
@@ -32,6 +31,9 @@ const BuyNow = () => {
           className=" ml-[-330px]"
           style={{
             width: PriceAll > 500 ? "80px" : "30px",
+            // width: "280px",
+            height: "23px",
+            background: "black"
           }}
         ></div>
       </div>
@@ -116,7 +118,7 @@ const BuyNow = () => {
                   {el.price}$
                 </span>
                 <a
-                  onClick={(el) => GoToBasket(el)}
+                  onClick={() => GoToBasket(el)}
                   href="#"
                   class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm px-3 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
