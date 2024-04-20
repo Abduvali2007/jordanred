@@ -26,11 +26,12 @@ const Addproduct = () => {
      else{
 
       let NewProduct = {
-        id: product.length ? product[product.length-1].id+1 : 1 ,
+        id: product.length ? product[product.length-1].id+1 :1 ,
         img,
         price,
         name,
         category,
+        quantity:1,
       };
       alert("успешно добавлен")
       setCategory('')

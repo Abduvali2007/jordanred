@@ -12,32 +12,14 @@ const BuyNow = () => {
     return dispatch(del(dat));
   };
   const GoToBasket = (da) => {
-    return dispatch(addBasket(da))
+    return dispatch(addBasket(da));
   };
   const PriceAll = product.reduce((acc, el) => {
     return (acc = acc + +el.price);
   }, 0);
   return (
     <div className="container ">
-      <div
-        className=" flex items-center justify-center bg-white ml-[400px] mt-[30px]"
-        style={{
-          width: "400px",
-          height: "20px",
-        }}
-        v
-      >
-        <div
-          className=" ml-[-330px]"
-          style={{
-            width: PriceAll > 500 ? "80px" : "30px",
-            // width: "280px",
-            height: "23px",
-            background: "black"
-          }}
-        ></div>
-      </div>
-
+     
       <div className=" flex  items-center justify-between flex-wrap py-[100px]">
         {product.map((el) => (
           <div class="w-[300px] max-w-sm h-[350px] text-black bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700">
