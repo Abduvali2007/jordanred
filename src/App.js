@@ -5,6 +5,10 @@ import Home from "./components/Home";
 import Addproduct from "./components/Addporduct";
 import BuyNow from "./components/BuyNow";
 import Basket from "./components/Basket";
+import Man from "./components/Header/Man";
+import Woman from "./components/Header/Woman";
+import Kid from "./components/Header/Kids";
+import Sale from "./components/Header/Sale";
 
 function App() {
   return (
@@ -15,6 +19,10 @@ function App() {
         <Route path="/addproduct" element={<Addproduct />} />
         <Route path="/buynow" element={<BuyNow />} />
         <Route path="/basket" element={<Basket />} />
+        <Route path="/man" element={<Man />} />
+        <Route path="/woman" element={<Woman />} />
+        <Route path="/kid" element={<Kid />} />
+        <Route path="/sale" element={<Sale/>} />
       </Routes>
     </div>
   );

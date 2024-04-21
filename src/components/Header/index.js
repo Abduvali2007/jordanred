@@ -17,11 +17,11 @@ const Header = () => {
               <img src={nike} alt="img" />
             </div>
             <div className=" flex gap-10  tracking-tighter	">
-              <Link to="/">HOME</Link>
-              <Link href="#">MAN</Link>
-              <Link href="#">WOMAN</Link>
-              <Link href="#">KIDS</Link>
-              <Link href="#">SALE</Link>
+              <Link to="/" >HOME</Link>
+              <Link to="/man" >MAN</Link>
+              <Link to="/woman">WOMAN</Link>
+              <Link to="/kid">KIDS</Link>
+              <Link to="/sale">SALE</Link>
             </div>
             <div className=" flex gap-5">
               <h1>

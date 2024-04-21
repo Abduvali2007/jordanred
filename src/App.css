@@ -38,7 +38,7 @@ body {
 .df{
   background: rgb(4, 85, 133);
 filter: blur(2px);
-transition: .9s;
+transition: .5s;
 }
 .df:hover{
   filter: blur(0px);
