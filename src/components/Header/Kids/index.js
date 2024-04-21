@@ -13,7 +13,7 @@ const Kid = () => {
   return (
     <div>
       <div className="container">
-        <div className=" flex items-center justify-between py-[90px]">
+        <div  className=" flex items-center justify-between py-[90px]">
           {Kid.map((el) => (
             <BuyCard el={el} />
           ))}

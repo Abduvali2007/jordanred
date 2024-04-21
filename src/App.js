@@ -9,6 +9,7 @@ import Man from "./components/Header/Man";
 import Woman from "./components/Header/Woman";
 import Kid from "./components/Header/Kids";
 import Sale from "./components/Header/Sale";
+import Search from "./components/Search";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/woman" element={<Woman />} />
         <Route path="/kid" element={<Kid />} />
         <Route path="/sale" element={<Sale/>} />
+        <Route path="/search/:proName" element={<Search/>} />
       </Routes>
     </div>
   );

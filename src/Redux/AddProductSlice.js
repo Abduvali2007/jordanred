@@ -6,6 +6,7 @@ const initialState = {
   Woman: JSON.parse(localStorage.getItem("woman")) || [],
   Kid: JSON.parse(localStorage.getItem("kid")) || [],
   Sale: JSON.parse(localStorage.getItem("sale")) || [],
+  Search: JSON.parse(localStorage.getItem("search")) || [],
 };
 
 export const AddProductSlice = createSlice({
@@ -44,8 +45,11 @@ export const AddProductSlice = createSlice({
       localStorage.setItem("sale", JSON.stringify(res));
       state.Sale = res;
     },
+//     SearchProduct(state,action){
+// state.Search = [...state.product]
+//     }
   },
 });
-export const { addProduct, del, categoryMan, categoryWoman, categoryKid,categorySale } =
+export const { addProduct, del, categoryMan, categoryWoman, categoryKid,categorySale,SearchProduct } =
   AddProductSlice.actions;
 export default AddProductSlice.reducer;
