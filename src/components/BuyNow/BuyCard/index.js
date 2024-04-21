@@ -90,7 +90,7 @@ const BuyCard = ({ el }) => {
             </span>
           </div>
           <div class="flex items-center justify-between">
-            <span class="text-3xl font-bold text-gray-900">{el.price}$</span>
+            <span class="text-3xl font-bold text-gray-900">{el.price.slice(0.3)}$</span>
             <a
               onClick={() => GoToBasket(el)}
               href="#"

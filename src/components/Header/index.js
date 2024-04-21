@@ -51,8 +51,8 @@ const Header = () => {
                 </h1>
               </Link>
               <Link className=" relative" to={"/basket"}>
-                {basket ? (
-                  <h1 className=" absolute top-[-16px] right-[-17px] text-white text-xl flex items-center justify-center w-5 h-5 rounded-[50%] bg-red-500">{basket.length}</h1>
+                {basket.length ? (
+                  <h1 className=" absolute top-[-16px] right-[-17px] text-white text-xl flex items-center justify-center w-5 h-5 rounded-[50%] bg-red-500">{basket.length }</h1>
                 ) : null}
                 <HiShoppingCart />
               </Link>
